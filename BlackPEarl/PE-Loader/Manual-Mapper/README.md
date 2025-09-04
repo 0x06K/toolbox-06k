@@ -2,6 +2,14 @@
 
 A modular, low-level PE (Portable Executable) loader implementation that manually loads and executes Windows PE files using direct NTDLL API calls instead of standard Windows loader functions.
 
+## What I Learned
+
+- How Windows PE files are loaded into memory.
+- How to manually resolve NTDLL functions from the export table.
+- Low-level file I/O with NtCreateFile and NtReadFile.
+- Section mapping, base relocations, import resolution, TLS callbacks, and CRT initialization.
+- Memory protection handling and executing PE entry points manually.
+
 ## Features
 
 - **Manual NTDLL Function Resolution**: Resolves NTDLL functions by parsing the export table manually
